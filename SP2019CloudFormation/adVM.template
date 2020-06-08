@@ -51,27 +51,23 @@
 
   "Mappings" : {
     "AWSRegion2AMI" : {
-      "us-east-1"        : {"Windows2008r2" : "ami-05053a58f18d79165", "Windows2012r2" : "ami-066663db63b3aa675"},
-      "us-west-2"        : {"Windows2008r2" : "ami-09baf7dca5abb5477", "Windows2012r2" : "ami-07c77fe35092981e9"},
-      "us-west-1"        : {"Windows2008r2" : "ami-0103343efe39caae9", "Windows2012r2" : "ami-08462bc4d6a8eb5c1"},
-      "eu-west-1"        : {"Windows2008r2" : "ami-0146d7f51c6677e99", "Windows2012r2" : "ami-009af7c43be38087d"},
-      "eu-west-2"        : {"Windows2008r2" : "ami-0c83c0bcaf872d604", "Windows2012r2" : "ami-025fc1fa28fdf1a87"},
-      "eu-west-3"        : {"Windows2008r2" : "ami-03af3787c0ef4ca0d", "Windows2012r2" : "ami-0cbc109ce3fe6584e"},
-      "eu-central-1"     : {"Windows2008r2" : "ami-098bba2f7c9962b56", "Windows2012r2" : "ami-0ece2db131cd3c16a"},
-      "eu-north-1"       : {"Windows2008r2" : "ami-0da3dcb725fd36774", "Windows2012r2" : "ami-01e97bc0f89e9ca04"},
-      "ap-northeast-1"   : {"Windows2008r2" : "ami-085b9d0f82b3d500b", "Windows2012r2" : "ami-0d99aa7f0403a9ba4"},
-      "ap-northeast-2"   : {"Windows2008r2" : "ami-05d7911c701557f98", "Windows2012r2" : "ami-0163c75ba997507aa"},
-      "ap-northeast-3"   : {"Windows2008r2" : "ami-0b9d45b41271b9dff", "Windows2012r2" : "ami-0646ac68d679b1b73"},
-      "ap-southeast-1"   : {"Windows2008r2" : "ami-08cde6692201557a8", "Windows2012r2" : "ami-00230cfcbc0180362"},
-      "ap-southeast-2"   : {"Windows2008r2" : "ami-0e17bfe822c550bff", "Windows2012r2" : "ami-0f66d840816e8a35f"},
-      "ap-south-1"       : {"Windows2008r2" : "ami-033ede8dc37ea7fb6", "Windows2012r2" : "ami-0437fea2a5ba5aacd"},
-      "us-east-2"        : {"Windows2008r2" : "ami-0ccd4940b0cd75ce3", "Windows2012r2" : "ami-00890851afd74dda3"},
-      "ca-central-1"     : {"Windows2008r2" : "ami-0ce5dfea946fa499d", "Windows2012r2" : "ami-051f75c651d856381"},
-      "sa-east-1"        : {"Windows2008r2" : "ami-0876972eb2541a9d5", "Windows2012r2" : "ami-0f7eee4d47377680e"},
-      "cn-north-1"       : {"Windows2008r2" : "ami-04d3dc91707f96a37", "Windows2012r2" : "ami-0524bf2ce3a8bab46"},
-      "cn-northwest-1"   : {"Windows2008r2" : "ami-006c99da93a40e535", "Windows2012r2" : "ami-0ce900e3a255d57a2"}
+        "us-east-1"        : {"Windows2012r2" : "ami-05c14a4906fd624f2"},
+        "us-west-2"        : {"Windows2012r2" : "ami-034c66d106a8683bc"},
+        "us-west-1"        : {"Windows2012r2" : "ami-05dd2c6ea05cb131c"},
+        "eu-west-1"        : {"Windows2012r2" : "ami-09a80330c153f2a1c"},
+        "eu-west-2"        : {"Windows2012r2" : "ami-05f1a385939cc8f64"},
+        "eu-west-3"        : {"Windows2012r2" : "ami-029f88f9b63d1842d"},
+        "eu-central-1"        : {"Windows2012r2" : "ami-0c5d50c355b22137e"},
+        "eu-north-1"        : {"Windows2012r2" : "ami-0e1e52dfa4e6a16a7"},
+        "ap-northeast-1"        : {"Windows2012r2" : "ami-0c0e2bc867d20c14d"},
+        "ap-northeast-2"        : {"Windows2012r2" : "ami-02fb4bf9e2a2cb517"},
+        "ap-southeast-1"        : {"Windows2012r2" : "ami-0ba5f6d4d33ccb0ce"},
+        "ap-southeast-2"        : {"Windows2012r2" : "ami-07b738e92ace3b5a1"},
+        "ap-south-1"        : {"Windows2012r2" : "ami-0f6482b39e0f927a6"},
+        "us-east-2"        : {"Windows2012r2" : "ami-09c515a13b6a03fc6"},
+        "ca-central-1"        : {"Windows2012r2" : "ami-072db0d409a259140"},
+        "sa-east-1"        : {"Windows2012r2" : "ami-02cf2affbf4dce747"}
     }
-
   },
 
   "Resources" : {    
