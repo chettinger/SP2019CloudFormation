@@ -40,6 +40,33 @@
     "DomainMemberSecurityGroup":{
         "Type":"String",
         "Description":"The security group name that was created by the Domain Deployment"        
+    },
+    "DomainAdminUser": {
+        "Description": "User name for the account that will be added as Domain Administrator. This is separate from the default \"Administrator\" account",
+        "Type": "String",
+        "Default": "StackAdmin"
+    },
+    "AdminPassword": {
+        "NoEcho": "true",
+        "Description" : "The Windows administrator account password",
+        "Type": "String",
+        "MinLength": "8",
+        "MaxLength": "41"
+    },
+    "DomainDNSName": {
+        "Description": "Fully qualified domain name (FQDN) of the forest root domain",
+        "Type": "String",
+        "Default": "mydomain.local"
+    },
+    "DomainNetBiosName": {
+        "Description": "Netbios name for the domain",
+        "Type": "String",
+        "Default": "mydomain"
+    },
+    "DomainControllerIP": {
+        "Description": "IP Address of the Domain Controller",
+        "Type": "String",
+        "Default": "mydomain"
     }
   },
 
@@ -144,7 +171,65 @@
             " -r WindowsServer",
             " --region ", { "Ref" : "AWS::Region" }, "\n",
           
-            "</script>"
+            "</script>",
+             "<powershell>\n",
+                  "### Change local admin password for consistency...\n",
+                  "([adsi]\"WinNT://$env:computername/Administrator\").SetPassword('",
+                  {
+                    "Ref": "AdminPassword"
+                  },
+                  "') \n",
+                  "### Join the domain...\n",             
+                  "$computer = Get-WmiObject -Class Win32_ComputerSystem \n",
+                  "if ($computer.domain -eq 'WORKGROUP') { \n",
+                  "  $adapter = Get-NetAdapter -Name 'Ethernet*'\n",
+                  "  Set-DNSClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses ('",
+                  {
+                    "Ref": "DomainControllerIP"
+                  },
+                  "')\n",
+                  "  $strNETLOGON='\\\\",
+                  {
+                    "Ref": "DomainControllerIP"
+                  },
+                  "\\NETLOGON' \n",
+                  "  $done=$false \n",
+                  "  while (!$done) {\n",
+                  "    Start-Sleep 5 \n",
+                  "    net use * $strNETLOGON /user:",
+                  {
+                    "Ref": "DomainAdminUser"
+                  },              
+                  " '",
+                  {
+                    "Ref": "AdminPassword"
+                  },
+                  "'\n",
+                  "    if (Test-Path $strNETLOGON) {$done=$true} \n",
+                  "  } \n",
+                  "  $domain = '",
+                  {
+                    "Ref": "DomainDNSName"
+                  },
+                  "'\n",
+                  "  $password = '",
+                  {
+                    "Ref": "AdminPassword"
+                  },
+                  "' | ConvertTo-SecureString -asPlainText -Force \n",
+                  "  $Administrator = '",
+                  {
+                    "Ref": "DomainNetBiosName"
+                  },
+                  "\\",
+                  {
+                    "Ref": "DomainAdminUser"
+                  },
+                  "'\n",
+                  "  $credential = New-Object System.Management.Automation.PSCredential($Administrator,$password) \n",
+                  "  Add-Computer -DomainName $domain -Credential $credential -restart \n",
+                  "}\n",
+                  "</powershell>\n"
         ]]}}
       }
     },
