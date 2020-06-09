@@ -51,22 +51,22 @@
 
   "Mappings" : {
     "AWSRegion2AMI" : {
-        "us-east-1"        : {"Windows2012r2" : "ami-05c14a4906fd624f2"},
-        "us-west-2"        : {"Windows2012r2" : "ami-034c66d106a8683bc"},
-        "us-west-1"        : {"Windows2012r2" : "ami-05dd2c6ea05cb131c"},
-        "eu-west-1"        : {"Windows2012r2" : "ami-09a80330c153f2a1c"},
-        "eu-west-2"        : {"Windows2012r2" : "ami-05f1a385939cc8f64"},
-        "eu-west-3"        : {"Windows2012r2" : "ami-029f88f9b63d1842d"},
-        "eu-central-1"        : {"Windows2012r2" : "ami-0c5d50c355b22137e"},
-        "eu-north-1"        : {"Windows2012r2" : "ami-0e1e52dfa4e6a16a7"},
-        "ap-northeast-1"        : {"Windows2012r2" : "ami-0c0e2bc867d20c14d"},
-        "ap-northeast-2"        : {"Windows2012r2" : "ami-02fb4bf9e2a2cb517"},
-        "ap-southeast-1"        : {"Windows2012r2" : "ami-0ba5f6d4d33ccb0ce"},
-        "ap-southeast-2"        : {"Windows2012r2" : "ami-07b738e92ace3b5a1"},
-        "ap-south-1"        : {"Windows2012r2" : "ami-0f6482b39e0f927a6"},
-        "us-east-2"        : {"Windows2012r2" : "ami-09c515a13b6a03fc6"},
-        "ca-central-1"        : {"Windows2012r2" : "ami-072db0d409a259140"},
-        "sa-east-1"        : {"Windows2012r2" : "ami-02cf2affbf4dce747"}
+        "us-east-1"         : {"Windows2012r2" : "ami-01b670d1a5b2c1da7"},
+        "us-west-2"         : {"Windows2012r2" : "ami-08d5ef742d7b43c8b"},
+        "us-west-1"         : {"Windows2012r2" : "ami-060a37a22181acf41"},
+        "eu-west-1"         : {"Windows2012r2" : "ami-0c6f7f1b00ea4dcb1"},
+        "eu-west-2"         : {"Windows2012r2" : "ami-047ff8007ad2221c4"},
+        "eu-west-3"         : {"Windows2012r2" : "ami-02ec9744c1383e84d"},
+        "eu-central-1"      : {"Windows2012r2" : "ami-00c3f464096640ebc"},
+        "eu-north-1"        : {"Windows2012r2" : "ami-0ab5d5ddb5a319b7e"},
+        "ap-northeast-1"    : {"Windows2012r2" : "ami-0b0c9f033e6f44b78"},
+        "ap-northeast-2"    : {"Windows2012r2" : "ami-018c1bdd5432a6a74"},
+        "ap-southeast-1"    : {"Windows2012r2" : "ami-031aa60a13feb802b"},
+        "ap-southeast-2"    : {"Windows2012r2" : "ami-05a48d1d20102801e"},
+        "ap-south-1"        : {"Windows2012r2" : "ami-02498810fdfa4b932"},
+        "us-east-2"         : {"Windows2012r2" : "ami-04fe13467029c1627"},
+        "ca-central-1"      : {"Windows2012r2" : "ami-00e9db447655e113f"},
+        "sa-east-1"         : {"Windows2012r2" : "ami-0219a20514f1572d8"}
     }
   },
 

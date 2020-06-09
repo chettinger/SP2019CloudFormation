@@ -17,6 +17,9 @@
     <Compile Include="adVM.template">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="sqlVM.template">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
   </PropertyGroup>
