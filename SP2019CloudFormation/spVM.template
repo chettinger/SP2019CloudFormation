@@ -45,22 +45,22 @@
 
   "Mappings" : {
     "AWSRegion2AMI" : {
-        "us-east-1"         : {"Windows2016" : "ami-006afafd73f092619"},
-        "us-west-2"         : {"Windows2016" : "ami-0d18faf7021b67cc9"},
-        "us-west-1"         : {"Windows2016" : "ami-047b8477286c5900f"},
-        "eu-west-1"         : {"Windows2016" : "ami-0176bb921d996da5b"},
-        "eu-west-2"         : {"Windows2016" : "ami-0a647988aca307c5a"},
-        "eu-west-3"         : {"Windows2016" : "ami-0dc85780b9e526f03"},
-        "eu-central-1"      : {"Windows2016" : "ami-001dde65c7963030c"},
-        "eu-north-1"        : {"Windows2016" : "ami-028d5cf24868f2dc9"},
-        "ap-northeast-1"    : {"Windows2016" : "ami-00402e7495e12ba72"},
-        "ap-northeast-2"    : {"Windows2016" : "ami-0f8fbcc90050af9e6"},
-        "ap-southeast-1"    : {"Windows2016" : "ami-04ed22c2d1f3ddc85"},
-        "ap-southeast-2"    : {"Windows2016" : "ami-0a22a3e64b5f2fca5"},
-        "ap-south-1"        : {"Windows2016" : "ami-069cdcf890f3737ed"},
-        "us-east-2"         : {"Windows2016" : "ami-08ca9fa2de549ef1d"},
-        "ca-central-1"      : {"Windows2016" : "ami-036863fd543beff64"},
-        "sa-east-1"         : {"Windows2016" : "ami-04c6ca927591a3a71"}
+        "us-east-1"        : {"Windows2016" : "ami-0cc5ea3dde5301489"},
+        "us-west-2"        : {"Windows2016" : "ami-0f9cc35d712b86a4f"},
+        "us-west-1"        : {"Windows2016" : "ami-0aa89f1b833336bf6"},
+        "eu-west-1"        : {"Windows2016" : "ami-0e59f5ff8749f81c8"},
+        "eu-west-2"        : {"Windows2016" : "ami-05cf35bf39c3c0d6d"},
+        "eu-west-3"        : {"Windows2016" : "ami-08f9a552e55285f32"},
+        "eu-central-1"     : {"Windows2016" : "ami-065377970c7b7369b"},
+        "eu-north-1"       : {"Windows2016" : "ami-0f9cfb4c07508873c"},
+        "ap-northeast-1"   : {"Windows2016" : "ami-0cd7a835d20a5fa3e"},
+        "ap-northeast-2"   : {"Windows2016" : "ami-0515c11fbe1299f0a"},
+        "ap-southeast-1"   : {"Windows2016" : "ami-0c9be38028c474d31"},
+        "ap-southeast-2"   : {"Windows2016" : "ami-0659baaaa394eba5e"},
+        "ap-south-1"       : {"Windows2016" : "ami-0996674586963828d"},
+        "us-east-2"        : {"Windows2016" : "ami-0a16ffe32a92704ea"},
+        "ca-central-1"     : {"Windows2016" : "ami-083db6415ff4ab7b1"},
+        "sa-east-1"        : {"Windows2016" : "ami-02d888aa9faa1017b"}
     }
 },
 

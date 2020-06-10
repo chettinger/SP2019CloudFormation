@@ -17,9 +17,29 @@
     <Compile Include="adVM.template">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AWS Sample Templates\ad-master-1.template">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AWS Sample Templates\Windows_Single_Server_SharePoint_Foundation.template">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="spVM.template">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sqlVM.template">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AWS Sample Templates" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AWS Sample Templates\Windows_Roles_And_Features.template.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AWS Sample Templates\Windows_Single_Server_Active_Directory.template.json">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
   </PropertyGroup>
